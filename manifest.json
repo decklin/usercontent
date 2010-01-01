@@ -1,6 +1,6 @@
 {
   "name": "userContent",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Apply a user stylesheet to all pages",
   "icons": {
     "32": "style-32.png",
