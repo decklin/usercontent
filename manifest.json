@@ -1,0 +1,22 @@
+{
+  "name": "userContent",
+  "version": "1.0",
+  "description": "Apply a user stylesheet to all pages",
+  "icons": {
+    "32": "style-32.png",
+    "48": "style-48.png"
+  },
+  "background_page": "background.html",
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "js": [ "usercontent.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}

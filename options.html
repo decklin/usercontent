@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <script>
+    function init() {
+        document.getElementById('styleText').value = localStorage.style;
+    }
+    function save() {
+        localStorage.style = document.getElementById('styleText').value;
+    }
+  </script>
+  <title>userContent</title>
+</head>
+<body onload="init();">
+  <p>Enter your user stylesheet here.</p>
+  <textarea id="styleText" cols="80" rows="24"></textarea>
+  <p><input type="button" value="Save Stylesheet" onclick="save();" /></p>
+</body>
+</html>

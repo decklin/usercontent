@@ -1,0 +1,7 @@
+<script>
+if (localStorage.style === undefined)
+    localStorage.style = '';
+chrome.extension.onRequest.addListener(function(req, src, send) {
+    send(localStorage.style);
+});
+</script>
